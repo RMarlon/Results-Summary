@@ -8,7 +8,8 @@
 
 :root {
 
-    --gradiente: linear-gradient(to bottom, hsla(256, 72%, 46%, 1) 40%, hsl(234, 85%, 45%));
+    --gradiente: linear-gradient(to bottom, hsla(256, 72%, 46%, 1) 40%, hsl(241, 81%, 54%));
+    --gradientTwo: linear-gradient( hsl(252, 100%, 67%), 10%, hsla(256, 72%, 46%, 1));
     /* colors list-container */
 
     --Lightred: hsl(0, 100%, 67%);
@@ -61,7 +62,6 @@ body {
     height: 400px;
     padding: 0.7rem;
     border-radius:25px;
-    border: solid 1px rebeccapurple;
     background-image:var(--gradiente);
 }
 
@@ -69,4 +69,37 @@ body {
     font-size: 18px;
     color: var(--Lightlavender);
     margin: 1rem 1rem;
+}
+
+.div-of-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    border-radius:50% ;
+    background-image: var(--gradientTwo);
+}
+
+.h1-76{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--White);
+}
+
+.of-100{
+    color: var(--Lightlavender);
+}
+
+.sub-title{
+    margin-top: 1rem;
+    color: var(--White);
+}
+
+.paragaph{
+    width: 230px;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--Lightlavender);
 }
