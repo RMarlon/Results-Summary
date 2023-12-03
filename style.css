@@ -63,6 +63,7 @@ body {
     padding: 0.7rem;
     border-radius:25px;
     background-image:var(--gradiente);
+    position: relative;
 }
 
 .result-of-container{
@@ -102,4 +103,14 @@ body {
     text-align: center;
     margin: 1rem 0;
     color: var(--Lightlavender);
+}
+
+.body-container{
+    position: absolute;
+    width: 280px;
+    height: 370px;
+    box-shadow: var(--Darkgrayblue) 2px 2px 5px;
+    border-radius:0 20px 20px 0px;
+    right: 40.4rem;
+    padding: 1rem;
 }
