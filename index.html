@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
@@ -29,12 +31,12 @@
 <body>
 
   <header class="head-container">
-    <p class="result-of-container">Your Result</p>
+    <h4 class="result-of-container">Your Result</h4>
     <div class="div-of-container">
 
       <h1 class="h1-76">76</h1>
       <small class="of-100">of 100</small>
-      
+
     </div>
 
     <h2 class="sub-title">Great</h2>
@@ -44,22 +46,49 @@
 
   <main class="body-container">
 
-    <h2 class="title-h2">Summary</h2>
+    <h3 class="title-h2">Summary</h3>
 
     <ul class="list-container">
-      <li> <img src="/assets/images/icon-reaction.svg" alt="image Reaction"> Reaction 80 / 100</li>
-      <li> <img src="/assets/images/icon-memory.svg" alt="image Memory"> Memory 92 / 100</li>
-      <li> <img src="/assets/images/icon-verbal.svg" alt=" image Verbal"> Verbal  61 / 100</li>
-      <li> <img src="/assets/images/icon-visual.svg" alt="image Visual"> Visual  72 / 100</li>
+      <li class="reaction">
+        <div >
+          <img src="/assets/images/icon-reaction.svg" alt="image Reaction">
+          <span>Reaction</span>
+        </div>
+        <span class="number-reaction">80 / 100</span>
+      </li>
+
+      <li class="memory">
+        <div>
+          <img src="/assets/images/icon-memory.svg" alt="image Memory">
+          <span>Memory</span>
+        </div>
+        <span class="number-memory">92 / 100</span>
+      </li>
+
+      <li class="verbal">
+        <div>
+          <img src="/assets/images/icon-verbal.svg" alt=" image Verbal">
+          <span>Verbal </span>
+        </div>
+        <span class="number-verbal">61 / 100</span>
+      </li>
+
+      <li class="visual">
+        <div>
+          <img src="/assets/images/icon-visual.svg" alt="image Visual">
+          <span>Visual</span>
+        </div>
+        <span class="number-visual">72 / 100</span>
+      </li>
     </ul>
 
-    <button class="btn">Continue</button>  
-  </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <button class="btn">Continue</button>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </main>
 </body>
 
 </html>
