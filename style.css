@@ -10,9 +10,9 @@
 :root {
 
     --gradiente: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    --gradientTwo: linear-gradient( hsl(252, 100%, 67%), 10%, hsla(256, 72%, 46%, 1));
     /* colors list-container */
-
+    --ShadowRed: hsla(0, 100%, 67%, 0.1);
+    --ShadowOrangeYellow:(39, 100%,56%, 0.1);
     --Lightred: hsl(0, 100%, 67%);
     --Orangeyyellow: hsl(39, 100%, 56%);
     --Greenteal: hsl(166, 100%, 37%);
@@ -46,8 +46,11 @@ li {
     list-style: none;
 }
 
+button{
+    border: none;
+}
+
 body {
-    /* width: 600px; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -57,7 +60,7 @@ body {
 .head-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     width: 280px;
     height: 400px;
@@ -84,7 +87,7 @@ body {
 }
 
 .h1-76{
-    font-size: 4rem;
+    font-size: 60px;
     font-weight: 800;
     color: var(--White);
 }
@@ -119,23 +122,60 @@ body {
     color: var(--Darkgrayblue);
 }
 
-.reaction{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--Lightlavender);
-    color: var(--Lightred);
-   
-}
-
 .list-container{
+    display: flex;
+    flex-direction: column;
     /* padding: 0 1rem; */
 }
 
 .reaction, .memory, .verbal, .visual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--ShadowRed);
+    margin: 0.7rem;
+    border-radius: 10px;
+    padding: 0.5rem; 
 }
 
+.reaction{
+    color: var(--Lightred); 
+}
+.memory{
+    color: var(--Orangeyyellow);
+}
+
+.verbal{
+    color: var(--Greenteal);
+}
+
+.visual{
+    color: var(--Cobalt-blue);
+}
 .number-reaction, .number-memory, .number-verbal, .number-visual{
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
+}
+
+.visual-score-0, .verbal-score-0, .memory-score-0, .reaction-score-0{
+    color: var(--Darkgrayblue);
+    font-weight: 800;
+}
+.visual-score-1, .verbal-score-1, .memory-score-1, .reaction-score-1{
+    color: rgba(87, 87, 87, 0.992);
+}
+
+.btn{
+    width: 85%;
+    margin: 0.5rem 1rem;
+    padding: 0.7rem;
+    border-radius: 20px;
+    color: var(--White);
+    background-color: var(--Darkgrayblue);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-image:var(--gradiente);
 }
